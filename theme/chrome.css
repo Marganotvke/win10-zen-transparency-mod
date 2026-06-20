@@ -1,0 +1,50 @@
+/* Transparency Test - CSS Only */
+/* Minimal CSS transparency enabler for Windows 10 */
+/* Tint modes: 0=no tint, 1=Zen theme, 2=custom color */
+
+@media (-moz-platform: windows) and (-moz-bool-pref: "zen.test_transparency.enabled") {
+  .zen-browser-generic-background,
+  .zen-browser-generic-background::before,
+  .zen-browser-generic-background::after,
+  #zen-browser-background,
+  #zen-toolbar-background,
+  #main-window {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+  }
+
+  #navigator-toolbox,
+  #zen-main-app-wrapper,
+  #zen-appcontent-wrapper,
+  #zen-tabbox-wrapper,
+  #browser {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    --zen-main-browser-background: transparent !important;
+    --zen-main-browser-background-toolbar: transparent !important;
+  }
+}
+
+/* Mode 1: Zen theme accent tint (debug red) */
+@media (-moz-platform: windows) and (-moz-bool-pref: "zen.test_transparency.enabled") and (-moz-pref("zen.test_transparency.tint_mode", 1)) {
+  .browserStack,
+  #tabbrowser-tabpanels,
+  #zen-appcontent-wrapper,
+  #zen-tabbox-wrapper,
+  #appcontent {
+    background-color: rgba(255, 0, 0, 0.3) !important;
+  }
+}
+
+/* Mode 2: Custom ARGB color */
+@media (-moz-platform: windows) and (-moz-bool-pref: "zen.test_transparency.enabled") and (-moz-pref("zen.test_transparency.tint_mode", 2)) {
+  .browserStack,
+  #tabbrowser-tabpanels,
+  #zen-appcontent-wrapper,
+  #zen-tabbox-wrapper,
+  #appcontent {
+    background-color: var(--zen-test_transparency-tint_color, #00000080) !important;
+  }
+}

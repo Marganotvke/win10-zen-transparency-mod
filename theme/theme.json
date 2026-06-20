@@ -1,0 +1,13 @@
+{
+  "id": "67acfef3f8494e29b84b99e732f80f39",
+  "name": "Transparency Test - CSS Only",
+  "description": "CSS transparency enabler with tint modes for Windows 10 (requires DWMBlurGlass)",
+  "version": "1.0",
+  "author": "Heriberht",
+  "disabledOn": ["macos", "linux"],
+  "js": false,
+  "origin": "local",
+  "style": {"chrome": "chrome.css"},
+  "preferences": "preferences.json",
+  "tags": ["windows", "transparency", "tint"]
+}

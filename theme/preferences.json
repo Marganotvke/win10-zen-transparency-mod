@@ -1,0 +1,29 @@
+[
+  {
+    "property": "zen.test_transparency.enabled",
+    "label": "Enable CSS transparency",
+    "type": "checkbox",
+    "defaultValue": false
+  },
+  {
+    "property": "zen.test_transparency.tint_mode",
+    "label": "Content tint mode",
+    "type": "dropdown",
+    "defaultValue": 0,
+    "options": [
+      { "label": "No tint", "value": 0 },
+      { "label": "Zen theme accent (debug red)", "value": 1 },
+      { "label": "Custom color", "value": 2 }
+    ]
+  },
+  {
+    "property": "zen.test_transparency.tint_color",
+    "label": "Custom tint ARGB hex (mode 2)",
+    "type": "string",
+    "defaultValue": "#00000080",
+    "placeholder": "#00000080 (semi-transparent black)",
+    "conditions": [
+      { "if": { "property": "zen.test_transparency.tint_mode", "value": 2 } }
+    ]
+  }
+]
