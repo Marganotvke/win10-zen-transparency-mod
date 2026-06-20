@@ -8,6 +8,8 @@ Please first install [DWMBlurGlass](https://github.com/Maplespe/DWMBlurGlass) on
 
 Install (Sine mod)[https://github.com/CosmoCreeper/Sine], then directly install this repo from there.
 
+(This should be compatible zen mod but Im too lazy to fix it)
+
 In sine mod, add the following address to the manual install address input:
 ```Marganotvke/win10-zen-transparency-mod/tree/main/theme```
 
