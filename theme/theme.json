@@ -1,13 +1,13 @@
 {
   "id": "67acfef3f8494e29b84b99e732f80f39",
-  "name": "Zen transparency for windows 10",
-  "description": "CSS transparency enabler with tint modes for Windows 10 (requires DWMBlurGlass)",
+  "name": "Windows 10 CSS Transparency",
+  "description": "Windows 10 transparency enabler using CSS only (requires DWMBlurGlass)",
   "version": "1.0",
   "author": "Marganotvke",
   "disabledOn": ["macos", "linux"],
   "js": false,
   "origin": "local",
-  "style": {"chrome": "chrome.css"},
-  "preferences": "preferences.json",
-  "tags": ["windows", "windows 10", "transparency"]
+  "style": {"chrome": "theme/chrome.css"},
+  "preferences": "theme/preferences.json",
+  "tags": ["windows", "transparency"]
 }
