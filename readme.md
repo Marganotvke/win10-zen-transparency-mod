@@ -6,6 +6,8 @@
 ## Install
 Please first install [DWMBlurGlass](https://github.com/Maplespe/DWMBlurGlass) on your windows. Most of your transparency configuration will be done in DWMBlurGlass instead of zen browser natively.
 
+You can also use other transparent utils (e.g. translucent window in windhawk). In theory any utils that can extend transparency to client body will work.
+
 Install (Sine mod)[https://github.com/CosmoCreeper/Sine], then directly install this repo from there.
 
 (This should be compatible zen mod but Im too lazy to fix it)
